@@ -1,10 +1,10 @@
 {
   "name": "material-kit",
-  "homepage": "https://github.com/creativetimofficial/material-kit",
+  "homepage": "https://github.com/tjain16/HomeServiceProvider",
   "authors": [
-    "creative-tim"
+    "Tripti Jain"
   ],
-  "description": "A Badass Bootstrap UI Kit based on Material Design",
+  "description": "Home Service Provider website to find help when doing some day to day jobs.",
   "main": "index.html",
   "keywords": [
     "material",

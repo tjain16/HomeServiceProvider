@@ -143,3 +143,15 @@ h2.title{
         color: #777;
     }
 }
+
+/* Overrides for styles*/
+.search-panel {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.headline-text{
+    text-transform: uppercase;
+    color: $teal-500;
+    font-size: 1.2rem;
+}

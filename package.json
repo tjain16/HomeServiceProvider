@@ -1,7 +1,7 @@
 {
   "name": "material-kit",
   "version": "2.0.6",
-  "description": "Material Kit, a Google Material Desgin. Coded by Creative Tim",
+  "description": "Home Service Provider website to find help when doing some day to day jobs.",
   "main": "index.html",
   "directories": {
     "example": "root"
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/material-kit.git"
+    "url": "git+https://github.com/tjain16/HomeServiceProvider"
   },
   "keywords": [
     "material kit",
@@ -34,10 +34,10 @@
     "frontend",
     "responsive bootstrap kit"
   ],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "author": "Tripti Jain",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/material-kit/issues"
+    "url": "https://github.com/tjain16/HomeServiceProvider/issues"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
@@ -48,7 +48,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-open": "^3.0.1"
   },
-  "homepage": "https://demos.creative-tim.com/material-kit/index.html",
+  "homepage": "https://github.com/tjain16/HomeServiceProvider",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1"
   }

@@ -2635,6 +2635,7 @@ tbody.collapse.show {
   align-items: stretch;
   width: 100%; }
   .input-group > .form-control,
+  .input-group > .form-control-special,
   .input-group > .custom-select,
   .input-group > .custom-file {
     position: relative;
@@ -2642,12 +2643,16 @@ tbody.collapse.show {
     width: 1%;
     margin-bottom: 0; }
     .input-group > .form-control:focus,
+    .input-group > .form-control-special:focus,
     .input-group > .custom-select:focus,
     .input-group > .custom-file:focus {
       z-index: 3; }
     .input-group > .form-control + .form-control,
     .input-group > .form-control + .custom-select,
     .input-group > .form-control + .custom-file,
+    .input-group > .form-control-special + .form-control,
+    .input-group > .form-control-special + .custom-select,
+    .input-group > .form-control-special + .custom-file,
     .input-group > .custom-select + .form-control,
     .input-group > .custom-select + .custom-select,
     .input-group > .custom-select + .custom-file,
@@ -8416,6 +8421,40 @@ form {
   .has-white .form-control::-webkit-input-placeholder {
     color: #fff; }
 
+.form-control-special {
+  background: no-repeat center bottom, center calc(100% - 1px);
+  background-size: 0 100%, 100% 100%;
+  border: 1px solid #009688;
+  height: 36px;
+  transition: background 0s ease-out;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0;
+  font-size: 14px; }
+  .form-control-special:focus,
+  .bmd-form-group.is-focused .form-control-special {
+    background-size: 100% 100%, 100% 100%;
+    transition-duration: 0.3s;
+    box-shadow: none; }
+  .form-control-special::-moz-placeholder {
+    color: #AAAAAA;
+    font-weight: 400;
+    font-size: 14px; }
+  .form-control-special:-ms-input-placeholder {
+    color: #AAAAAA;
+    font-weight: 400;
+    font-size: 14px; }
+  .form-control-special::-webkit-input-placeholder {
+    color: #AAAAAA;
+    font-weight: 400;
+    font-size: 14px; }
+  .has-white .form-control-special::-moz-placeholder {
+    color: #fff; }
+  .has-white .form-control-special:-ms-input-placeholder {
+    color: #fff; }
+  .has-white .form-control-special::-webkit-input-placeholder {
+    color: #fff; }
+
 .bmd-help {
   position: absolute;
   display: none;
@@ -9811,6 +9850,15 @@ textarea {
   background-color: transparent;
   border-color: transparent; }
 
+.input-group .input-group-text-special {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px 0 15px;
+  color: #fff;
+  background-color: #009688;
+  border: 1px solid #009688; }
+
 .input-group .input-group-btn {
   position: absolute;
   right: 0;
@@ -9883,10 +9931,13 @@ textarea {
     padding: 1.4286em 0.8575em;
     font-size: 0.875rem;
     font-weight: 500;
-    border: 0; }
+    border-right: solid #009688; }
 
 .nav .nav-item {
   position: relative; }
+
+.nav .nav-item:last-child .nav-link {
+  border: 0px; }
 
 .img-thumbnail {
   border-radius: 16px; }
@@ -10491,6 +10542,16 @@ h2.title {
     font-size: 80%;
     line-height: 1.42857143;
     color: #777; }
+
+/* Overrides for styles*/
+.search-panel {
+  width: 60%;
+  margin: 0 auto; }
+
+.headline-text {
+  text-transform: uppercase;
+  color: #009688;
+  font-size: 1.2rem; }
 
 .nav-tabs {
   border: 0;
@@ -12168,7 +12229,13 @@ footer {
   font-size: 1.5em; }
 
 .section {
-  padding: 70px 0; }
+  padding: 40px 0; }
+
+.section-1 {
+  padding: 20px 0; }
+
+.section-2 {
+  padding: 10px 0 20px 0; }
 
 .profile-page .page-header {
   height: 380px;
